@@ -49,7 +49,7 @@ console.log(lockWisdomOpen);
 Strength Lock requires 4 strength to unlock
 Wisdom Lock requires 6 wisdom to unlock
 Set each lock to true if the hero can open it.
-If all locks are opened, the hero can enter. */
+If all locks are opened,  the hero can enter. */
 
 if (lockMagicOpen && lockStrengthOpen && lockWisdomOpen) {
   console.log("All locks are open! You enter the magical chamber.");
