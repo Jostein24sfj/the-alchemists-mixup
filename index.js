@@ -1,4 +1,4 @@
-let roseEssence;
+/* let roseEssence;
 let dragonTears;
 let unicornDust;
 let liquifiedPrincess;
@@ -51,10 +51,67 @@ Wisdom Lock requires 6 wisdom to unlock
 Set each lock to true if the hero can open it.
 If all locks are opened,  the hero can enter. */
 
-if (lockMagicOpen && lockStrengthOpen && lockWisdomOpen) {
+/* if (lockMagicOpen && lockStrengthOpen && lockWisdomOpen) {
   console.log("All locks are open! You enter the magical chamber.");
 } else if (magicPower === 4 || strength === 3 || wisdom === 5) {
   console.log("Could not open all locks. Lacking attribute");
 } else {
   console.log("You couldn't open all the locks. Keep trying!");
+} */
+
+let hitTargets = 8; // Out of 10
+let obstaclesCleared = 4; // Out of 5
+let spellsCast = 2; // Out of 3
+let questionsAnswered = 7; // Out of 10
+
+let archeryPercentageScore = (hitTargets / 10) * 100;
+console.log("Targets hit: " + archeryPercentageScore + "%");
+
+if (archeryPercentageScore >= 90 && archeryPercentageScore <= 100) {
+  console.log("Outstanding performance");
+} else if (archeryPercentageScore >= 70 && archeryPercentageScore <= 89) {
+  console.log("Great job, you passed with flying colors!");
+} else if (archeryPercentageScore >= 50 && archeryPercentageScore <= 69) {
+  console.log("Good effort, you passed the trials!");
+} else if (archeryPercentageScore <= 50) {
+  console.log("More training required. Don't give up!");
+}
+
+let obstaclePercentageScore = (obstaclesCleared / 5) * 100;
+console.log("Obstacles cleared: " + obstaclePercentageScore + "%");
+
+if (obstaclePercentageScore >= 90 && obstaclePercentageScore <= 100) {
+  console.log("Outstanding performance");
+} else if (obstaclePercentageScore >= 70 && obstaclePercentageScore <= 89) {
+  console.log("Great job, you passed with flying colors!");
+} else if (obstaclePercentageScore >= 50 && obstaclePercentageScore <= 69) {
+  console.log("Good effort, you passed the trials!");
+} else if (obstaclePercentageScore <= 50) {
+  console.log("More training required. Don't give up!");
+}
+
+let spellsPercentageScore = ((spellsCast / 3) * 100).toFixed(2);
+console.log("Spells cast: " + spellsPercentageScore + "%");
+
+if (spellsPercentageScore >= 90 && spellsPercentageScore <= 100) {
+  console.log("Outstanding performance");
+} else if (spellsPercentageScore >= 70 && spellsPercentageScore <= 89) {
+  console.log("Great job, you passed with flying colors!");
+} else if (spellsPercentageScore >= 50 && spellsPercentageScore <= 69) {
+  console.log("Good effort, you passed the trials!");
+} else if (spellsPercentageScore <= 50) {
+  console.log("More training required. Don't give up!");
+}
+
+let questionsPercentageScore = (questionsAnswered / 10) * 100;
+console.log("Questions answered: " + questionsPercentageScore + "%");
+
+if (questionsPercentageScore >= 90 && questionsPercentageScore <= 100) {
+  console.log("Outstanding performance");
+} else if (questionsPercentageScore >= 70 && questionsPercentageScore <= 89) {
+  console.log("Great job, you passed with flying colors!");
+} else if (questionsPercentageScore >= 50 && questionsPercentageScore <= 69) {
+  console.log("Good effort, you passed the trials!");
+} else if (questionsPercentageScore <= 50) {
+  console.log("More training required. Don't give up!");
 }
